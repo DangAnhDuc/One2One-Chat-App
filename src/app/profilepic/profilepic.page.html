@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-nav>
+    <ion-title>profilepic</ion-title>
+  </ion-nav>
+</ion-header>
+
+<ion-content>
+  <img src="{{ imgurl }}"/>
+
+
+  <div class="spacer" style="height: 10px;"></div>
+  <ion-button (click)="chooseimage()" expand="block" color="primary">
+      Choose an image
+  </ion-button>
+  <div [hidden]="moveon">
+      <ion-button (click)="updateproceed()" expand="block" color="secondary">
+          Upload & proceed
+        </ion-button>
+  </div>
+  <div [hidden]="!moveon">
+      <ion-button (click)="proceed()" expand="block" color="light">
+          Skip this step
+        </ion-button>
+  </div>
+  
+</ion-content>

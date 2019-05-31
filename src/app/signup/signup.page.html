@@ -1,0 +1,35 @@
+<ion-content class="background">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Sign Up</ion-card-subtitle>
+      <ion-card-title></ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list no-lines>
+        <div class="spacer" style="height: 10px;"></div>
+
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="email" [(ngModel)]="newuser.email"></ion-input>
+        </ion-item>
+        <div class="spacer" style="height: 5px;"></div>
+        <ion-item>
+          <ion-label position="floating">Password</ion-label>
+          <ion-input type="password" [(ngModel)]="newuser.password"></ion-input>
+        </ion-item>
+        <div class="spacer" style="height: 10px;"></div>
+        <ion-item>
+          <ion-label position="floating">Nickname</ion-label>
+          <ion-input type="text" [(ngModel)]="newuser.displayName"></ion-input>
+        </ion-item>
+        <div class="spacer" style="height: 10px;"></div>
+        <ion-button (click)="signUp()" expand="block" color="secondary">
+          Sign Up
+        </ion-button>
+        <ion-button (click)="goBack()" expand="block" color="light">
+          Go Back
+        </ion-button>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

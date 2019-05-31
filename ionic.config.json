@@ -1,5 +1,7 @@
 {
   "name": "one2one",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

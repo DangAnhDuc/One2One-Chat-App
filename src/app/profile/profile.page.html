@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <img src="{{avatar}}">
+  
+  <div>
+    <ion-text><h2>{{displayName}}</h2></ion-text>
+  </div>
+  
+  <div class="spacer" style="height: 10px;"></div>
+  <div>
+    <ion-button round outline color="danger" (click)="logout()">Logout</ion-button>
+  </div>
+</ion-content>
